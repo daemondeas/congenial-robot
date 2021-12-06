@@ -11,7 +11,11 @@ let day3 (argv: string[]) =
     Array.map Seq.toArray argv
     |> Day3.secondTask
 
+let day4 (arg: string) =
+    let args = arg.Split "\n\n" |> Array.toList
+    Day4.secondTask args
+
 [<EntryPoint>]
 let main args =
-    printfn "%d" (day3 args)
+    printfn "%d" (day4 Day4Input.input)
     0
