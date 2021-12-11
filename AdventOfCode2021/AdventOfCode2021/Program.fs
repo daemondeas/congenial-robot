@@ -24,7 +24,13 @@ let day7 arg =
 let day8 arg =
     Day8.secondTask arg
 
+let day9 args =
+    Day9.firstTask args
+
+let day10 args =
+    Day10.secondTask args
+
 [<EntryPoint>]
 let main args =
-    printfn "%d" (day8 Day8Input.input)
+    printfn "%d" (day10 (Day10Input.input.Split "\n"))
     0
